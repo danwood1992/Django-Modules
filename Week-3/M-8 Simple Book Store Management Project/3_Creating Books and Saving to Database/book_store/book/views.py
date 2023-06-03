@@ -21,7 +21,7 @@ def store_book(request):
 def show_book(request):
     book = BookStoreModel.objects.all()
     # To see time:
-    for item in book:
-        print(item.first_published)
-    # print(book)
+    # for item in book:
+    #     print(item.first_published)
+    print(book)
     return render(request,'show_book.html',{'data':book})
